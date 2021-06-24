@@ -1,0 +1,58 @@
+.wrapper {
+  position: relative;
+}
+
+.red {
+  background-color: red;
+}
+
+.box {
+  width: 200px;
+  height: 100px;
+  position: relative;
+}
+
+.box:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.box-hover-wrapper {
+  display: none;
+  position: absolute;
+  left: 100%;
+}
+
+.box-hover {
+  width: 200px;
+  height: 100px;
+  background-color: #dddddd;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+
+.box-hover:hover {
+  background-color: aquamarine;
+  cursor: pointer;
+}
+
+.box:hover .box-hover-wrapper {
+  display: block;
+}

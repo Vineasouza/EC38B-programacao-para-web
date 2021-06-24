@@ -1,0 +1,51 @@
+.elemento_fixo {
+  width: 70%;
+  height: 100%;
+  position: fixed;
+  left: 15%;
+  top: 50px;
+  background-color: #000000;
+}
+
+.elemento_relativo {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 50px;
+  left: 250px;
+}
+
+.elemento_absoluto {
+  background-color: green;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.elemento_estatico {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+
+.elemento_absoluto1 {
+  background-color: orange;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 300px;
+  left: 0;
+  z-index: 1;
+}
+
+.elemento_absoluto2 {
+  background-color: blueviolet;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 350px;
+  left: 50px;
+}

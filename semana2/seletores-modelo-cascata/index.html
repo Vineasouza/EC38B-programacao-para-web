@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Seletores e Modelo Cascata</title>
+  </head>
+  <body>
+    <!-- Pseudo-classes: utilizados juntos com os seletores para determinar regras mais específicas de elementos -->
+    <div class="pseudo">
+      <a href="http://www.google.com">google goodle</a>
+      <a href="http://www.google.com">google</a>
+      <a href="http://www.google.com">google</a>
+    </div>
+    <br />
+    <br />
+    <!-- Efeito cascata: mais especificos possuem prioridade sobre os menos específicos | para burlar essa regra, usar o operador !important -->
+    <div class="seletores">
+      <a href="http://www.google.com" class="link_feliz">google</a>
+      <a href="http://www.google.com" class="link_feliz">google</a>
+      <a href="http://www.google.com" class="link_feliz">google</a>
+    </div>
+  </body>
+</html>

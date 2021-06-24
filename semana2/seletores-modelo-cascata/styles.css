@@ -1,0 +1,32 @@
+a {
+  display: block;
+  padding: 5px;
+  margin: 5px;
+  width: 30%;
+}
+
+/* Pseudo-element */
+.pseudo a:hover {
+  background-color: blueviolet;
+}
+
+.pseudo a:first-letter {
+  font-size: 27px;
+}
+
+.pseudo a:first-child {
+  background-color: rgb(162, 79, 240);
+}
+
+/* Seletores */
+.seletores .link_feliz {
+  background-color: red;
+}
+
+.seletores .link_feliz {
+  background-color: blue;
+}
+
+.seletores .link_feliz:first-child {
+  background-color: yellow;
+}

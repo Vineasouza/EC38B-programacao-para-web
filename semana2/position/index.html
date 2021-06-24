@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Position</title>
+  </head>
+  <body>
+    <!-- fixed : posicionado de acordo com a janela do browser, não ocupando espalo de elementos de posição estática -->
+    <div class="elemento_fixo">
+      <!-- relative: posicionamento definido de forma relativa à posição normal do próprio elemento, ocupando espaço dos elementos estáticos -->
+      <div class="elemento_relativo"><p>relativo</p></div>
+
+      <!-- absolute: elemento é posicionado relativamente ao primeiro pai que possua posição não estática, não ocupando espaço de elementos estáticos -->
+      <div class="elemento_absoluto"><p>absoluto</p></div>
+
+      <!-- static: posicionados de acordo com a ordem de inserção da página, não afetados pela propriedade left, right, top e bottom -->
+      <div class="elemento_estatico"><p>estatico</p></div>
+
+      <!-- z-index: elementos nao posicionados estaticamente (no fluxo normal de uma pagina) pode ser sobrepostos | devem estar na mesma hierarquia -->
+      <div class="elemento_absoluto1"><p>z-index 1</p></div>
+      <div class="elemento_absoluto2"><p>z-index 2</p></div>
+    </div>
+  </body>
+</html>

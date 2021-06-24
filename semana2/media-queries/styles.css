@@ -1,0 +1,38 @@
+.boxes {
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.blueviolet {
+  background-color: blueviolet;
+}
+
+.purple {
+  background-color: purple;
+}
+
+/* @media screen and (max-width: 600px) {
+  .boxes {
+    width: 300px;
+    float: none;
+    margin: 5px;
+    background-color: #dddddd;
+  }
+} */

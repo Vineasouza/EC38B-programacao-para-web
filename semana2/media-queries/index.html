@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Media Queries</title>
+  </head>
+  <style>
+    @media screen {
+      p.test {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+      }
+    }
+    @media print {
+      p.test {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 10px;
+      }
+    }
+    @media screen, print {
+      p.test {
+        font-weight: bold;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .boxes {
+        width: 300px;
+        float: none;
+        margin: 5px;
+        background-color: #dddddd;
+      }
+    }
+  </style>
+  <body>
+    <div class="boxes red"></div>
+    <div class="boxes blue"></div>
+    <div class="boxes yellow"></div>
+    <div class="boxes green"></div>
+    <div class="boxes blueviolet"></div>
+    <div class="boxes purple"></div>
+  </body>
+</html>
