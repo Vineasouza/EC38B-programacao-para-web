@@ -1,0 +1,67 @@
+.dialog {
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.dialog.show {
+  display: flex;
+}
+
+.button {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  right: 0;
+  bottom: 0;
+  margin: 15px;
+}
+
+.box {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  width: 50vw;
+  height: 50vh;
+  border-radius: 10px;
+}
+
+.cadastro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  border: 2px solid #000;
+}
+
+.inputwrapper {
+  display: flex;
+  flex-direction: row;
+  width: 35vw;
+}
+
+.text_tarefa {
+  margin-right: 20px;
+}
+
+.text_condicional {
+  margin-left: 20px;
+}
+
+.list {
+  padding-top: 30px;
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.listcontent {
+  display: flex;
+  flex-direction: row;
+}

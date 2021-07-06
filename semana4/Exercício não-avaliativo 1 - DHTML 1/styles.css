@@ -1,0 +1,29 @@
+.box {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  height: 50vh;
+  border-radius: 10px;
+}
+
+.dialog {
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.dialog.show {
+  display: flex;
+}
+
+.button {
+  width: fit-content;
+  height: fit-content;
+}

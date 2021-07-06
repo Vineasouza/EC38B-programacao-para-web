@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Exercício não-avaliativo 2 - DOM 2</title>
+  </head>
+  <body>
+    <h1>ToDo List</h1>
+    <button>Clique em mim!</button>
+    <script type="text/javascript">
+      document
+        .getElementsByTagName("button")[0]
+        .addEventListener("click", function () {
+          document.querySelector(".dialog").className = "dialog show";
+        });
+    </script>
+    <div class="dialog">
+      <div class="box">
+        <h1>ToDo List</h1>
+        <div class="cadastro">
+          <div class="inputwrapper">
+            <p class="text_tarefa">Nova Tarefa</p>
+            <input type="text" class="textinput" />
+            <p class="text_condicional"></p>
+          </div>
+          <div class="list">
+            <div class="listcontent">
+              <input type="checkbox" class="checkbox" />
+              <p class="listtext"></p>
+            </div>
+          </div>
+        </div>
+        <button class="button">Fechar</button>
+        <script type="text/javascript">
+          document
+            .getElementsByTagName("button")[1]
+            .addEventListener("click", function () {
+              document.querySelector(".dialog").className = "dialog";
+            });
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

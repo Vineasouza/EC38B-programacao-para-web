@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./reset.css" /> -->
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Exemplo</title>
+  </head>
+  <body>
+    <h1>Introdução ao Javascript</h1>
+    <input type="text" name="" id="" />
+    <!-- <button>Clique em MIM!!!</button> -->
+    <ul></ul>
+    <script type="text/javascript">
+      var lista = document.querySelector("ul");
+      var button = document.querySelector("button");
+      document.querySelector("input").addEventListener("keyup", function () {
+        var palavra = document.querySelector("input").value;
+        for (let index = 0; index < 5; index++) {
+          var li = document.createElement("li");
+          li.innerHTML = palavra + " " + index;
+          lista.appendChild(li);
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+.dialog {
+  background-color: yellow;
+  padding: 5px;
+  box-shadow: 3px 3px #ccc;
+  width: 200px;
+  border-radius: 2px;
+  opacity: 0;
+  transform: scale(0) translateX(-100px);
+  transition: all linear 0.3s;
+}
+
+.dialog.show {
+  opacity: 1;
+  transform: scale(1) translateX(0px);
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Javascript</title>
+    <script type="text/javascript">
+      document.write("<h1>Exemplo 1</h1>");
+    </script>
+  </head>
+  <body>
+    <h2>Introdu&ccedil;&atilde;o Javascript</h2>
+    </body>
+    <br>
+    <br>
+    <br>
+    <h1>Operadores Aritm&eacute;tico Javascript</h1>
+    <script type="text/javascript">
+      document.write("<code>1+2+3= " + (1 + 2 + 3) + "</code>");
+    </script>
+    <br>
+    <br>
+    <br>
+    <script type="text/javascript">
+      var d = new Date()
+      var time = d.getHours();
+      if(time < 10) {
+        document.write("<b>Bom dia</b>")
+      } else if (time > 10 && time < 16) {
+        document.write("<b>Boa tarde</b>")
+      } else {
+        document.write("<b>Boa noite, são </b>" + time + "<b>horas</br>")
+      }
+    </script>
+    <br>
+    <br>
+    <br>
+    <script type="text/javascript">
+      var d = new Date()
+      var theDay = d.getDay();
+      switch(theDay) {
+        case 5:
+          document.write("<b>Sexta Feira!!/b>");
+          break;
+        case 6:
+          document.write("<b>Sabado!!/b>");
+          break;
+        default:
+          document.write("<b>Não é fim de semana!!</b>");
+      }
+    </script>
+  </body>
+</html>

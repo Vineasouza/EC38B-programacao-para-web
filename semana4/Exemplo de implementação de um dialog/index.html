@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Exemplo de dialog</title>
+  </head>
+  <body>
+    <h1>Exemplo de dialog</h1>
+    <button>Ativar dialog</button>
+    <div class="dialog">mensagem dentro da caixinha</div>
+    <script type="text/javascript">
+      var button = document.querySelector("button"),
+        dialog = document.querySelector(".dialog");
+
+      button.addEventListener("click", function () {
+        if (dialog.className == "dialog show") {
+          dialog.className = "dialog";
+        } else {
+          dialog.className = "dialog show";
+        }
+      });
+    </script>
+  </body>
+</html>

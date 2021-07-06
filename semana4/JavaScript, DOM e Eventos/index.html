@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Exemplo 3 Javascript</title>
+  </head>
+  <body>
+    <h1>Javascript</h1>
+    <p>Introdução ao Javascript</p>
+    <script type="text/javascript">
+      alert(document.body.childNodes[3].innerHTML);
+    </script>
+    <a href="#" title="teste click">Clique aqui</a>
+    <script type="text/javascript">
+      document.getElementsByTagName("a")[0].onclick = function () {
+        alert("Evento click no link");
+      };
+    </script>
+    <a href="#" onclick="alert('Evento click no link')">Clique aqui</a>
+  </body>
+</html>
