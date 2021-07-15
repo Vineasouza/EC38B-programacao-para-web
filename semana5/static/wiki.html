@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo AJAX</title>
+  </head>
+  <body>
+    <h1>Exemplo de chamada de API</h1>
+    <div id="texto"></div>
+    <script type="text/javascript" charset="utf-8">
+      var texto = document.querySelector("#texto");
+      var request = new XMLHttpRequest();
+      request.open(
+        "GET",
+        "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=UTFPR&format=json&origin=*",
+        true
+      );
+      request.onreadystatechange = function () {
+        if (request.readyState === 4 && request.status === 200) {
+          let response = JSON.parse(request.responseText);
+          texto.innerHTML = response["query"]["search"][0]["snippet"];
+        }
+      };
+      request.send();
+    </script>
+  </body>
+</html>

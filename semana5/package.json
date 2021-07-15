@@ -1,0 +1,12 @@
+{
+  "name": "semana5",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Vinicius Souza",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1"
+  }
+}
